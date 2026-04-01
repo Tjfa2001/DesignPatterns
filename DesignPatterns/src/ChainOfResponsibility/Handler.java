@@ -21,6 +21,7 @@ public abstract class Handler {
 	
 	protected boolean checkNext(String password) {
 		if(next==null) {
+			System.out.println("\tPassed all checks! Yippee!");
 			return true;
 		} else {
 			return next.check(password);

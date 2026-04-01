@@ -11,7 +11,7 @@ public class NumberHandler extends Handler {
 		boolean match = matcher.find();
 		
 		if(match) {
-			return true;
+			return checkNext(password);
 		}
 		else {
 			System.out.println("Passwords must contain a numerical character");
