@@ -6,4 +6,8 @@ public class Sword extends Item {
 	public String toString() {
 		return "Sword";
 	}
+	
+	public void useItem() {
+		System.out.println("Swish!");
+	}
 }

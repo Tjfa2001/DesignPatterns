@@ -52,6 +52,40 @@ public class Inventory {
 		return this.items;
 	}
 	
+	public String invArrows() {
+		StringBuilder builder = new StringBuilder();
+		
+		builder.append(" ");
+		Item[] inv = getInventory();
+		
+		for(int i = 0; i<this.capacity; i++) {
+			String current_item = (inv[i] == null) ? "null" : inv[i].toString();
+			int item_name_length = current_item.length();
+			int mid = -1;
+					
+			if(i==this.getCurIndex()) {
+				mid = (item_name_length / 2);
+			}
+			
+			for(int j = 0; j<item_name_length; j++) {
+				if(mid == j) {
+					builder.append("^");
+					mid = -1;
+				} else {
+					builder.append(" ");	
+				}
+				
+			}
+			if(i != this.capacity - 1) {
+				builder.append("  ");
+			}
+		}
+		
+		builder.append(" ");
+		
+		return builder.toString();
+	}
+	
 	public String toString() {
 		return Arrays.toString(this.items);
 	}

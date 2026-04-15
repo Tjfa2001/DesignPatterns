@@ -6,4 +6,8 @@ public class Firework extends Item {
 		public String toString() {
 			return "Firework";
 		}
+		
+		public void useItem() {
+			System.out.println("BANG Boom WHIZ!");
+		}
 }
