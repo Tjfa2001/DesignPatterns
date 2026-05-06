@@ -1,10 +1,22 @@
 package AbstractFactory;
 
+/*
+ * File: 			 CheapHat.java
+ * Description:  	 A cheap hat which extends the Hat interface
+ * 
+ * Author:           Thomas Avant
+ * Creation Date:    06/05/2026
+ * 
+ * Version History:
+ * v1.0              First recorded version of the cheap hat class
+ */
+
 public class CheapHat extends Hat{
 	
 	private double price;
 	
 	public CheapHat() {
+		// Set price to 5 for simplicity
 		setPrice(5);
 	}
 	

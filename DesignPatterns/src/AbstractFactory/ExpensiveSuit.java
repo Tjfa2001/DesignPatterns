@@ -1,10 +1,22 @@
 package AbstractFactory;
 
+/*
+ * File: 			 ExpensiveSuit.java
+ * Description:  	 An expensive suit which extends the Suit interface
+ * 
+ * Author:           Thomas Avant
+ * Creation Date:    06/05/2026
+ * 
+ * Version History:
+ * v1.0              First recorded version of the expensive suit class
+ */
+
 public class ExpensiveSuit extends Suit{
 	
 	private double price;
 	
 	public ExpensiveSuit() {
+		// Sets price to 1000 for simplicity
 		setPrice(1000);
 	}
 	

@@ -2,6 +2,17 @@ package AbstractFactory;
 
 import java.util.Scanner;
 
+/*
+ * File: 			 AbstractFactoryMain.java
+ * Description:  	 Main class for the abstract factory design pattern
+ * 
+ * Author:           Thomas Avant
+ * Creation Date:    06/05/2026
+ * 
+ * Version History:
+ * v1.0              First recorded version of the abstract factory class
+ */
+
 public class AbstractFactoryMain {
 
 	public static void main(String[] args) {

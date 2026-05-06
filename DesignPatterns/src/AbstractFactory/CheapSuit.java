@@ -1,10 +1,22 @@
 package AbstractFactory;
 
+/*
+ * File: 			 CheapSuit.java
+ * Description:  	 A cheap suit which extends the Suit interface
+ * 
+ * Author:           Thomas Avant
+ * Creation Date:    06/05/2026
+ * 
+ * Version History:
+ * v1.0              First recorded version of the cheap suit class
+ */
+
 public class CheapSuit extends Suit{
 	
 	private double price;
 	
 	public CheapSuit() {
+		// Sets price to 10 for simplicity
 		setPrice(10);
 	}
 	
