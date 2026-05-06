@@ -1,9 +1,21 @@
 package Factory;
 
+/*
+ * File: 			 Rectangle.java
+ * Description:  	 Rectangle class for the factory design pattern. Inherits from
+ *                   the Shape superclass.
+ * 
+ * Author:           Thomas Avant
+ * Creation Date:    06/05/2026
+ * 
+ * Version History:
+ * v1.0              First recorded version
+ */
+
 public class Rectangle extends Shape {
 	
-	double width;
-	double height;
+	private double width;
+	private double height;
 	
 	public Rectangle(double width, double height) {
 		this.width = width;
@@ -24,6 +36,6 @@ public class Rectangle extends Shape {
 	}
 	
 	public String toString() {
-		return String.format("I am a %s and my width is %.2g and my height is %.2g","rectangle",this.width,this.height);
+		return String.format("I am a rectangle and my width is %.2g and my height is %.2g",this.width,this.height);
 	}
 }
